@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>在 Windows10 運行 Ubuntu 子系統 (ft. 將子系統移動到其他硬碟)</title>
+  <meta name="description" content="STEP 1 : 轉成開發人員模式">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/linux/2019/08/28/ubuntu-on-windows10.html">
+  <link rel="alternate" type="application/rss+xml" title="wychen" href="http://yourdomain.com/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">wychen</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h2 class="post-title" itemprop="name headline">在 Windows10 運行 Ubuntu 子系統 (ft. 將子系統移動到其他硬碟)</h2>
+    <p class="post-meta"><time datetime="2019-08-28T08:49:00+08:00" itemprop="datePublished">Aug 28, 2019</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="step-1--轉成開發人員模式">STEP 1 : 轉成開發人員模式</h2>
+
+<p>先點擊螢幕左下角的放大鏡圖示</p>
+
+<p><img src="https://miro.medium.com/max/236/1*7sJgfZbKAbvMVcXml-IR3Q.png" alt="" /></p>
+
+<p>然後搜尋『開發人員專用設定』</p>
+
+<p><img src="https://miro.medium.com/max/934/1*sh5tJOeW942aTzjhsC9k2w.png" alt="" /></p>
+
+<p>接著勾選『開發人員模式』</p>
+
+<p><img src="https://miro.medium.com/max/1363/1*wt_QEkkcOfn7OR0f-6eQpA.png" alt="" /></p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="step-2--打開-linux-bash-功能">STEP 2 : 打開 Linux Bash 功能</h2>
+
+<p>在螢幕左下方的放大鏡搜尋『開啟或關閉 Windows 功能』</p>
+
+<p><img src="https://miro.medium.com/max/630/1*R21BPCn0xMdd6d-Ubm_UPQ.png" alt="" /></p>
+
+<p>將『適用於 Linux 的 Windows 子系統』的選項打開後按確定</p>
+
+<p><img src="https://miro.medium.com/max/608/1*2bGkrMbcu4ZA2IRShFUJDg.png" alt="" /></p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="step-3--安裝-ubuntu-子系統">STEP 3 : 安裝 Ubuntu 子系統</h2>
+
+<p>使用螢幕下方的放大鏡搜尋『Microsoft Store』並開啟</p>
+
+<p>接著在商店裡搜尋『Ubuntu』</p>
+
+<p><img src="https://miro.medium.com/max/1583/1*VQJKpwNTopTz7mst_OnkHg.png" alt="" /></p>
+
+<blockquote>
+  <p>你可以發現有 <code class="highlighter-rouge">Ubuntu</code>, <code class="highlighter-rouge">Ubuntu 16.04 LTS</code>, <code class="highlighter-rouge">Ubuntu 18.04 LTS</code>，而在這裡我安裝了『Ubuntu 16.04 LTS』</p>
+</blockquote>
+
+<p><img src="https://miro.medium.com/max/1585/1*MYnW-3YQfSEHD7O1itL6Dg.png" alt="" /></p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="step-4--開啟-linux-子系統的-bash-shell">STEP 4 : 開啟 Linux 子系統的 Bash Shell</h2>
+
+<p>在螢幕左下角的放大鏡搜尋『Bash』並開啟</p>
+
+<p><img src="https://miro.medium.com/max/615/1*K_K5BuCdnm_gZ1wlUoKV9A.png" alt="" /></p>
+
+<p>開啟後即可開始使用 Ubuntu 16.04 的 Bash Shell</p>
+
+<p><img src="https://miro.medium.com/max/1029/1*dgPZNb2a6z4bjqvOATDcQg.png" alt="" /></p>
+
+<p>到這裡就大功告成了，但有 Linux 子系統的 Root File System 是預設安裝在系統碟裡的，而通常你的系統碟都是容量小的 SSD，僅作為放置 Windows 作業系統使用，若 Linux 子系統也放置於此，長期使用下來後可能會佔據不少的容量</p>
+
+<p>因此，從下個步驟開始我會教你如何將放置於系統碟的 Linux 子系統搬到其他的硬碟，如果你是有此需求的人就繼續往下看，沒有的話就不需要做以下步驟囉~</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="step-5--安裝-choco">STEP 5 : 安裝 choco</h2>
+
+<p>請你在螢幕左下角的放大鏡搜尋『Windows Power Shell』，並對他點擊右鍵來使用<strong>系統管理員</strong>執行</p>
+
+<p>執行後請輸入以下指令，並按 Enter</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Set-ExecutionPolicy Bypass <span class="nt">-Scope</span> Process <span class="nt">-Force</span><span class="p">;</span> iex <span class="o">((</span>New-Object System.Net.WebClient<span class="o">)</span>.DownloadString<span class="o">(</span>‘https://chocolatey.org/install.ps1<span class="s1">'))</span></code></pre></figure>
+
+<p><img src="https://miro.medium.com/max/1131/1*IjjqGEF0_EeRxjrFxJyMhA.png" alt="" /></p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="step-6--安裝-lxrunoffline">STEP 6 : 安裝 LxRunOffline</h2>
+
+<p>安裝完 choco 之後，繼續在 Windows Power Shell 中輸入以下指令來安裝 <code class="highlighter-rouge">LxRunOffline</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">choco install lxrunoffline</code></pre></figure>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="step-7--在另一個硬碟建資料夾並設置權限">STEP 7 : 在另一個硬碟建資料夾並設置權限</h2>
+
+<p>以我為例子，我的系統碟是 C 槽，而現在我想將 Linux 子系統移動到 D 槽，所以我在 <strong>D 槽建一個資料夾名為 wsl</strong></p>
+
+<p><img src="https://miro.medium.com/max/1186/1*KnW_GkXhAq_HKkzTCNi-KA.png" alt="" /></p>
+
+<p>接著繼續在剛剛的 Windows Power Shell 上輸入指令『whoami』來查看你的使用者名稱。以我為例子，我的輸出為 <code class="highlighter-rouge">laptop-binqens5\chenw</code>，因此 <code class="highlighter-rouge">chenw</code> 就是我的使用者名稱</p>
+
+<p><img src="https://miro.medium.com/max/365/1*_c6kUm-LPPQpRo7ZmRIAIg.png" alt="" /></p>
+
+<p>使用以下指令來給予你的 D:\wsl 資料夾權限</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">icacls D:<span class="se">\w</span>sl /grant <span class="s2">"chenw:(OI)(CI)(F)"</span></code></pre></figure>
+
+<p><img src="https://miro.medium.com/max/781/1*8l8BYiFVDmPxstwxdNL9lw.png" alt="" /></p>
+
+<blockquote>
+  <p>請注意記得將『chenw』換成你自己的使用者名稱</p>
+</blockquote>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="step-8--使用-lxrunoffline-來移動-linux-子系統">STEP 8 : 使用 LxRunOffline 來移動 Linux 子系統</h2>
+
+<p>繼續在剛剛的 Windows Power Shell 上輸入以下指令</p>
+
+<blockquote>
+  <p>在這裡請注意，如果你剛剛在 Microsoft store 裡面下載的是 <code class="highlighter-rouge">Ubuntu 18.04 LTS</code> 的話，請將以下指令的 <code class="highlighter-rouge">Ubuntu-16.04</code> 改為 <code class="highlighter-rouge">Ubuntu 18.04</code>。而倘若你剛剛下載的是 <code class="highlighter-rouge">Ubuntu</code>，則請將以下指令的 <code class="highlighter-rouge">Ubuntu-16.04</code> 改為 <code class="highlighter-rouge">Ubuntu</code></p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">lxrunoffline move <span class="nt">-n</span> Ubuntu-16.04 <span class="nt">-d</span> D:<span class="se">\w</span>sl<span class="se">\i</span>nstalled<span class="se">\U</span>buntu-16.04</code></pre></figure>
+
+<p>執行這個指令後，可能會有一些 WARNING 訊息，而這是正常的，所以請不用太在意，移動 Linux 子系統的過程需要幾分鐘的時間，務必耐心等候，不要隨意關閉 Windows Power Shell</p>
+
+<p>完成之後你可以用以下指令來確認你的 Linux 子系統是否成功移動到我們自己創建的資料夾中</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">lxrunoffline get-dir <span class="nt">-n</span> Ubuntu-16.04</code></pre></figure>
+
+<p><img src="https://miro.medium.com/max/693/1*1589HtoiqIVih-hQC0h83w.png" alt="" /></p>
+
+<p>若你的步驟跟我一樣，則輸出訊息應該會跟我一樣，到這裡恭喜你成功了 !</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="step-9--開啟你的-linux-子系統">STEP 9 : 開啟你的 Linux 子系統</h2>
+
+<p>請使用以下指令來開啟你的 Linux 子系統 Bash Shell</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wsl</code></pre></figure>
+
+<p><img src="https://miro.medium.com/max/570/1*6iCCanRlPxJPvGcmlrymYw.png" alt="" /></p>
+
+<p>如此一來你在 Linux 子系統上做的任何更新或者安裝的任何東西都不會占用你的系統碟容量，而是占用你的 D 槽或其他你所設置的硬碟</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="參考文獻">參考文獻</h2>
+
+<ul>
+  <li>
+    <p><a href="https://blog.gtwang.org/windows/how-to-get-ubuntu-and-bash-running-on-windows-10/">Windows 10 運行 Ubuntu Linux 的 Bash Shell 原生執行環境教學</a></p>
+  </li>
+  <li>
+    <p><a href="https://stackoverflow.com/questions/38779801/move-wsl-bash-on-windows-root-filesystem-to-another-hard-drive">Move WSL (Bash on Windows) root filesystem to another hard drive?</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/DDoSolitary/LxRunOffline">A full-featured utility for managing Windows Subsystem for Linux (WSL)</a></p>
+  </li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">wychen</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>wychen</li>
+          <li><a href="mailto:chenwy0806@mail.fcu.edu.tw">chenwy0806@mail.fcu.edu.tw</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/wychen85"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">wychen85</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/jekyllrb"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">jekyllrb</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Record my records
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
